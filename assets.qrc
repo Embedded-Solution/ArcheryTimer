@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style/styledef</file>
+        <file>style/style.css</file>
+        <file>images/home</file>
+        <file>fonts/Daggersquare.ttf</file>
+        <file>images/reset</file>
+        <file>sounds/simpleBip.mp3</file>
+        <file>sounds/fin de tir.mp3</file>
+        <file>sounds/doubleBip.mp3</file>
+    </qresource>
+</RCC>

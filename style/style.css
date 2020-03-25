@@ -1,0 +1,50 @@
+@font-face {
+font-family: "Daggersquare";
+src: url('DAGGERSQUARE.otf');
+}
+
+/* Basic style */
+MainWindow ,End {
+    background-color:@backgroundColor;
+}
+.title, QGroupBox {
+        color:white;
+        font-size: @labelFontSize;
+        font-family: "DAGGERSQUARE";
+        qproperty-alignment: AlignCenter;
+        background-color:@backgroundColor;
+}
+
+QPushButton {
+        background-color: @frameColor;
+        color:@buttonTextColor;
+        font-size: @labelFontSize;
+        font-family: "DAGGERSQUARE";
+}
+
+QSpinBox {
+        height:@spinboxFontSize;
+        color:@buttonTextColor;
+        background-color:@spinboxColor;
+        font-size:@spinboxFontSize
+}
+QSpinBox::up-button,QSpinBox::down-button{
+        height: 35px;
+        width: 60px;
+}
+
+ .timerWindow {
+
+        background-color:@preparationColor;
+}
+
+.timer {
+        color:white;
+        font-family: "DAGGERSQUARE";
+        font-size: @timerFontSize;
+
+}
+
+.mainwindow {
+        background-color:@backgroundColor
+}
