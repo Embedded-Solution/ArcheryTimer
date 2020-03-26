@@ -6,3 +6,5 @@ spinboxColor=#0DD6BB
 spinboxFontSize=70px
 preparationColor=#EB7D00
 timerFontSize=500px
+titleFontSize=60px
+mainTitleFontSize=120px

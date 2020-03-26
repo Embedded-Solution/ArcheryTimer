@@ -1,18 +1,34 @@
 @font-face {
-font-family: "Daggersquare";
+font-family: "DAGGERSQUARE";
 src: url('DAGGERSQUARE.otf');
 }
 
 /* Basic style */
-MainWindow ,End {
+MainWindow ,End,Custom {
     background-color:@backgroundColor;
+    color:@buttonTextColor;
+    font-size: @labelFontSize;
+    font-family: "DAGGERSQUARE";
 }
+.customLabel{
+color:@buttonTextColor;
+font-size: @labelFontSize;
+ font-family: "DAGGERSQUARE";
+}
+
 .title, QGroupBox {
-        color:white;
-        font-size: @labelFontSize;
+        color:@buttonTextColor;
+        font-size: @titleFontSize;
         font-family: "DAGGERSQUARE";
         qproperty-alignment: AlignCenter;
-        background-color:@backgroundColor;
+}
+
+.mainTitle{
+        color:@buttonTextColor;
+        font-size: @mainTitleFontSize;
+        font-family: "DAGGERSQUARE";
+        qproperty-alignment: AlignCenter;
+        /*background-color:@backgroundColor;*/
 }
 
 QPushButton {

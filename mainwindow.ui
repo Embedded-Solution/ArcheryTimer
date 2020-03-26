@@ -69,7 +69,7 @@
              <string>CHRONOTIR</string>
             </property>
             <property name="class" stdset="0">
-             <string>title</string>
+             <string>mainTitle</string>
             </property>
            </widget>
           </item>

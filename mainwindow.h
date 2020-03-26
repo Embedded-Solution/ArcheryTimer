@@ -20,19 +20,24 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-     void loadStyle(QString filename = ":/style/style.css", QString variablesFilename = ":/style/styledef");
+    void loadStyle(QString filename = ":/style/style.css", QString variablesFilename = ":/style/styledef");
+    void startTimer(bool mode,QVector<int> params);
 
 private slots:
-     void on_customButton_clicked();
+    void on_customButton_clicked();
 
-     void on_tirCompteButton_clicked();
+    void on_tirCompteButton_clicked();
 
+
+    void on_duelButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     Custom *m_custom;
     Timer *m_timer;
-    End *m_end;
+    QGraphicsDropShadowEffect *borderLabelTextShadowEffect;
+    QGraphicsDropShadowEffect *borderLabelTextShadowEffect2;
+
 
 };
 #endif // MAINWINDOW_H

@@ -42,4 +42,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     assets.qrc
 
-DISTFILES +=
+DISTFILES += \
+    sounds/fin de tir.wav

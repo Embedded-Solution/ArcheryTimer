@@ -18,6 +18,10 @@ public:
 private slots:
     void on_homePB_clicked();
 
+    void on_nextPB_clicked();
+signals:
+    void resetTimer();
+
 private:
     Ui::End *ui;
 };

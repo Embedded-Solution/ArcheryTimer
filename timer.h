@@ -20,26 +20,25 @@ class Timer : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit Timer(int mode, QVector<int> params,QWidget *home,QWidget *parent=nullptr);
+    explicit Timer(QWidget *parent=nullptr);
     ~Timer();
-    bool timerTC();
+    void timerTC(bool mode,QVector<int> params);
 
 
 
 private slots:
     void on_timerTC();
     void on_timerDuel();
-    void on_timerCustom();
+    void on_resetTimer();
 
 private:
     Ui::Timer *ui;
     QTimer *timer;
-    QWidget *m_home;
-    int m_mode;
+    End *m_endView;
+    bool m_mode;
     int m_phase;
     QVector<int> m_params;
-    QVector<int>m_paramsTC={10,5,3};
-    QVector<int>m_paramsDuel={10,90,30};
+    QVector<int> m_previousParams;
     QGraphicsDropShadowEffect *timerLabelTextShadowEffect;
 
 
