@@ -69,13 +69,13 @@ void MainWindow::on_customButton_clicked()
 
 void MainWindow::on_tirCompteButton_clicked()
 {
-  QVector<int> paramsTC={4,5,3};
+  QVector<int> paramsTC={10,90,30};
   startTimer(0,paramsTC);
 }
 
 void MainWindow::on_duelButton_clicked()
 {
-    QVector<int> paramsDuel={4,5,3};
+    QVector<int> paramsDuel={10,20,6};
     startTimer(1,paramsDuel);
 }
 
