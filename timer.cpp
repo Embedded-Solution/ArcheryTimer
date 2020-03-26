@@ -54,7 +54,7 @@ void Timer::on_resetTimer()
     showMaximized();
     //play double bip
     QSound::play(":/sounds/doubleBip.wav");
-    timer->start(200);
+    timer->start(1000);
 
 }
 
@@ -66,12 +66,14 @@ void Timer::on_timerTC()
     case 3:
         ui->timerLabel->setText(QString::number(m_params[0]));
         m_params[0]--;
-        if (m_params[0]==-1)
-        {
-            m_phase--;
-            //play simple bip
+
+        //play simple bip
+        if (m_params[0]==0)
             QSound::play(":/sounds/simpleBip.wav");
-        }
+
+        //next phase
+        if (m_params[0]==-1)
+            m_phase--;
         break;
 
     case 2:
@@ -95,7 +97,7 @@ void Timer::on_timerTC()
         ui->timerLabel->setText(QString::number(total));
         m_params[1]--;
 
-        if (total==2)
+        if (total==3)
         {
             //play final sound
             QSound::play(":/sounds/finalBip.wav");
