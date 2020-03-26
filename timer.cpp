@@ -150,7 +150,7 @@ void Timer::on_timerDuel()
         ui->timerLabel->setText(QString::number(m_params[1]));
         m_params[1]--;
 
-        if (m_params[1]==4)
+        if (m_params[1]==3)
         {
             //play final sound
             QSound::play(":/sounds/finalBip.wav");

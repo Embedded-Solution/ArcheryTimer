@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>ChronoTir</string>
   </property>
   <property name="class" stdset="0">
    <string>mainwindow</string>
