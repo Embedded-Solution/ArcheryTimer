@@ -157,6 +157,9 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="autoFillBackground">
              <bool>true</bool>
             </property>
@@ -182,6 +185,9 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Duel</string>
             </property>
@@ -203,6 +209,9 @@
               <width>500</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="text">
              <string>Custom</string>

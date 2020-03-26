@@ -31,6 +31,9 @@
           <height>50</height>
          </size>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -63,6 +66,9 @@
           <height>50</height>
          </size>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -91,22 +97,13 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="2" column="1">
-          <widget class="QSpinBox" name="time3TC">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Temps vert</string>
            </property>
-           <property name="suffix">
-            <string> s</string>
-           </property>
-           <property name="maximum">
-            <number>999</number>
-           </property>
-           <property name="value">
-            <number>30</number>
+           <property name="class" stdset="0">
+            <string>customLabel</string>
            </property>
           </widget>
          </item>
@@ -129,22 +126,13 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
-          <widget class="QSpinBox" name="time2TC">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="startTC">
+           <property name="text">
+            <string>Start</string>
            </property>
-           <property name="suffix">
-            <string> s</string>
-           </property>
-           <property name="maximum">
-            <number>999</number>
-           </property>
-           <property name="value">
-            <number>90</number>
+           <property name="class" stdset="0">
+            <string>button</string>
            </property>
           </widget>
          </item>
@@ -168,23 +156,41 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Temps vert</string>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="time3TC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
            </property>
-           <property name="class" stdset="0">
-            <string>customLabel</string>
+           <property name="suffix">
+            <string> s</string>
+           </property>
+           <property name="maximum">
+            <number>999</number>
+           </property>
+           <property name="value">
+            <number>30</number>
            </property>
           </widget>
          </item>
-         <item row="3" column="1">
-          <widget class="QPushButton" name="startTC">
-           <property name="text">
-            <string>Start</string>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="time2TC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
            </property>
-           <property name="class" stdset="0">
-            <string>button</string>
+           <property name="suffix">
+            <string> s</string>
+           </property>
+           <property name="maximum">
+            <number>999</number>
+           </property>
+           <property name="value">
+            <number>90</number>
            </property>
           </widget>
          </item>
