@@ -97,7 +97,7 @@ void Timer::on_timerTC()
         ui->timerLabel->setText(QString::number(total));
         m_params[1]--;
 
-        if (total==3)
+        if (total==4)
         {
             //play final sound
             QSound::play(":/sounds/finalBip.wav");
