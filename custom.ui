@@ -44,6 +44,9 @@
           <height>40</height>
          </size>
         </property>
+        <property name="class" stdset="0">
+         <string>button</string>
+        </property>
        </widget>
       </item>
       <item>
@@ -72,6 +75,9 @@
           <width>40</width>
           <height>40</height>
          </size>
+        </property>
+        <property name="class" stdset="0">
+         <string>button</string>
         </property>
        </widget>
       </item>
@@ -177,6 +183,9 @@
            <property name="text">
             <string>Start</string>
            </property>
+           <property name="class" stdset="0">
+            <string>button</string>
+           </property>
           </widget>
          </item>
         </layout>
@@ -277,6 +286,9 @@
           <widget class="QPushButton" name="startDuel">
            <property name="text">
             <string>Start</string>
+           </property>
+           <property name="class" stdset="0">
+            <string>button</string>
            </property>
           </widget>
          </item>
