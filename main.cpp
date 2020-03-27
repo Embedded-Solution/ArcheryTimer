@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
         qDebug() << db.families().at(i);
       }*/
     MainWindow w;
-    w.showMaximized();
+    w.showFullScreen();
     return a.exec();
 }

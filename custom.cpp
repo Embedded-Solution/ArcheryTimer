@@ -25,7 +25,7 @@ void Custom::on_homePB_clicked()
 {
     //MainWindow *parent_ptr = static_cast<MainWindow*>(this->parent());
     this->hide();
-    parentWidget()->show();
+    parentWidget()->showFullScreen();
 }
 
 void Custom::on_time1TC_valueChanged(int arg1)

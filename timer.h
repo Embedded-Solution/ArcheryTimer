@@ -9,6 +9,7 @@
 #include <QDebug>
 #include <QGraphicsDropShadowEffect>
 #include "end.h"
+#include "keyenterreceiver.h"
 
 
 namespace Ui {
@@ -30,6 +31,8 @@ private slots:
     void on_timerTC();
     void on_timerDuel();
     void on_resetTimer();
+    void keyEnterPressed();
+    void keyEscapePressed();
 
 private:
     Ui::Timer *ui;
@@ -40,6 +43,7 @@ private:
     QVector<int> m_params;
     QVector<int> m_previousParams;
     QGraphicsDropShadowEffect *timerLabelTextShadowEffect;
+    keyEnterReceiver *m_key;
 
 
 };

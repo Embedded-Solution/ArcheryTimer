@@ -15,15 +15,14 @@ End::~End()
 
 void End::on_homePB_clicked()
 {
-    //MainWindow *parent_ptr = static_cast<MainWindow*>(this->parent());
     this->hide();
-    parentWidget()->parentWidget()->show();
+    parentWidget()->parentWidget()->showFullScreen();
 }
 
 void End::on_nextPB_clicked()
 {
     emit resetTimer();
-     this->hide();
+    this->hide();
 
 
 

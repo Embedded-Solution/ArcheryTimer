@@ -64,7 +64,7 @@ void MainWindow::loadStyle(QString filename, QString variablesFilename) {
 void MainWindow::on_customButton_clicked()
 {
     this->hide();
-    m_custom->showMaximized();
+    m_custom->showFullScreen();
 }
 
 void MainWindow::on_tirCompteButton_clicked()

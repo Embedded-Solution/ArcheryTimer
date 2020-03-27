@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     custom.cpp \
     end.cpp \
+    keyenterreceiver.cpp \
     main.cpp \
     mainwindow.cpp \
     timer.cpp
@@ -25,6 +26,7 @@ SOURCES += \
 HEADERS += \
     custom.h \
     end.h \
+    keyenterreceiver.h \
     mainwindow.h \
     timer.h
 
