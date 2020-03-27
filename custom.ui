@@ -131,6 +131,9 @@
          </item>
          <item row="3" column="1">
           <widget class="QPushButton" name="startTC">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
            <property name="text">
             <string>Start</string>
            </property>
@@ -308,6 +311,9 @@
          </item>
          <item row="3" column="1">
           <widget class="QPushButton" name="startDuel">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
            <property name="text">
             <string>Start</string>
            </property>
@@ -325,14 +331,12 @@
   </widget>
  </widget>
  <tabstops>
-  <tabstop>startTC</tabstop>
   <tabstop>time1TC</tabstop>
-  <tabstop>time3TC</tabstop>
   <tabstop>time2TC</tabstop>
-  <tabstop>repsDuel</tabstop>
+  <tabstop>time3TC</tabstop>
   <tabstop>time1Duel</tabstop>
   <tabstop>time2Duel</tabstop>
-  <tabstop>startDuel</tabstop>
+  <tabstop>repsDuel</tabstop>
  </tabstops>
  <resources>
   <include location="assets.qrc"/>

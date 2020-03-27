@@ -18,7 +18,7 @@ Configurer table de mixage son :
 
 Exécuter sur la raspberry :
 
-    ./ArcheryTimer -style motif
+    ./ArcheryTimer -style plastique
 
 
 Commandes :
