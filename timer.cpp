@@ -57,7 +57,7 @@ void Timer::on_resetTimer()
     ui->timerLabel->setText(QString::number(m_params[0]));
 
     showFullScreen();
-
+    parentWidget()->hide();
     m_params=m_previousParams;
     m_phase=3;
 
