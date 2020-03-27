@@ -1,0 +1,21 @@
+Paquets à installer :
+  QT :
+    qt5-default
+    qtmultimedia5-dev
+    libqt5multimediawidgets5
+    libqt5multimedia5-plugins
+    libqt5multimedia5
+  Son :
+    pulseaudio
+
+Configurer table de mixage son :
+
+    sudo amixer cset numid=3
+  Si sortie Jack :
+    sudo amixer cset numid=3 1
+  Si sortie HDMI :
+    sudo amixer cset numid=3 2
+
+Exécuter sur la raspberry :
+
+    ./ArcheryTimer -style motif

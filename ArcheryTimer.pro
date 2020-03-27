@@ -45,4 +45,5 @@ RESOURCES += \
     assets.qrc
 
 DISTFILES += \
+    README \
     sounds/fin de tir.wav

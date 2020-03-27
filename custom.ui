@@ -116,7 +116,7 @@
             </size>
            </property>
            <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
+            <enum>Qt::WheelFocus</enum>
            </property>
            <property name="suffix">
             <string> s</string>
@@ -168,7 +168,7 @@
             </size>
            </property>
            <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
+            <enum>Qt::WheelFocus</enum>
            </property>
            <property name="suffix">
             <string> s</string>
@@ -190,7 +190,7 @@
             </size>
            </property>
            <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
+            <enum>Qt::WheelFocus</enum>
            </property>
            <property name="suffix">
             <string> s</string>
@@ -225,7 +225,7 @@
             </size>
            </property>
            <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
+            <enum>Qt::WheelFocus</enum>
            </property>
            <property name="value">
             <number>6</number>
@@ -241,7 +241,7 @@
             </size>
            </property>
            <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
+            <enum>Qt::WheelFocus</enum>
            </property>
            <property name="suffix">
             <string> s</string>
@@ -263,7 +263,7 @@
             </size>
            </property>
            <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
+            <enum>Qt::WheelFocus</enum>
            </property>
            <property name="suffix">
             <string> s</string>
@@ -324,6 +324,16 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>startTC</tabstop>
+  <tabstop>time1TC</tabstop>
+  <tabstop>time3TC</tabstop>
+  <tabstop>time2TC</tabstop>
+  <tabstop>repsDuel</tabstop>
+  <tabstop>time1Duel</tabstop>
+  <tabstop>time2Duel</tabstop>
+  <tabstop>startDuel</tabstop>
+ </tabstops>
  <resources>
   <include location="assets.qrc"/>
  </resources>
