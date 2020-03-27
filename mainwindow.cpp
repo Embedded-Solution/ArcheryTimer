@@ -63,14 +63,15 @@ void MainWindow::loadStyle(QString filename, QString variablesFilename) {
 
 void MainWindow::on_customButton_clicked()
 {
-    this->hide();
     m_custom->showFullScreen();
+    this->hide();
+
 }
 
 void MainWindow::on_tirCompteButton_clicked()
 {
-  QVector<int> paramsTC={10,90,30};
-  startTimer(0,paramsTC);
+    QVector<int> paramsTC={10,90,30};
+    startTimer(0,paramsTC);
 }
 
 void MainWindow::on_duelButton_clicked()
@@ -82,7 +83,7 @@ void MainWindow::on_duelButton_clicked()
 void MainWindow::startTimer(bool mode,QVector<int> params)
 {
     this->hide();
-   m_timer->timerTC(mode,params);
+    m_timer->timerTC(mode,params);
 }
 
 

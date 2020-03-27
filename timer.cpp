@@ -48,16 +48,6 @@ void Timer::timerTC(bool mode,QVector<int> params)
 
 void Timer::on_resetTimer()
 {
-
-    m_params=m_previousParams;
-    m_phase=3;
-
-    //select timer depending on mode
-    if (m_mode)
-        connect(timer, SIGNAL(timeout()), this, SLOT(on_timerDuel()));
-    else
-        connect(timer, SIGNAL(timeout()), this, SLOT(on_timerTC()));
-
     //init orange color
     timerLabelTextShadowEffect->setColor(QColor("#C56800"));
     ui->timerLabel->setGraphicsEffect(timerLabelTextShadowEffect );
@@ -67,6 +57,15 @@ void Timer::on_resetTimer()
     ui->timerLabel->setText(QString::number(m_params[0]));
 
     showFullScreen();
+
+    m_params=m_previousParams;
+    m_phase=3;
+
+    //select timer depending on mode
+    if (m_mode)
+        connect(timer, SIGNAL(timeout()), this, SLOT(on_timerDuel()));
+    else
+        connect(timer, SIGNAL(timeout()), this, SLOT(on_timerTC()));
 
     //play double bip
     QSound::play(":/sounds/doubleBip.wav");
@@ -136,11 +135,11 @@ void Timer::on_timerTC()
         //disconenct timer
         timer->disconnect();
 
-        //hide timer
-        this->hide();
-
         //show next/menu page
         m_endView->showFullScreen();
+
+        //hide timer
+        this->hide();
         break;
 
     }
@@ -203,10 +202,10 @@ void Timer::on_timerDuel()
 
     case 1://disconnexion phase
         timer->disconnect();
-        //hide timer
-        this->hide();
         //show next window
         m_endView->showFullScreen();
+        //hide timer
+        this->hide();
         break;
 
     }
@@ -226,7 +225,7 @@ void Timer::keyEnterPressed()
 void Timer::keyEscapePressed()
 {
     timer->disconnect();
-    this->hide();
     parentWidget()->showFullScreen();
+    this->hide();
 }
 

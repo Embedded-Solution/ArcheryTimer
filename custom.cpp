@@ -23,9 +23,8 @@ Custom::~Custom()
 
 void Custom::on_homePB_clicked()
 {
-    //MainWindow *parent_ptr = static_cast<MainWindow*>(this->parent());
-    this->hide();
     parentWidget()->showFullScreen();
+    this->hide();
 }
 
 void Custom::on_time1TC_valueChanged(int arg1)
@@ -70,14 +69,14 @@ void Custom::on_resetPB_clicked()
 
 void Custom::on_startTC_clicked()
 {
-    this->hide();
     MainWindow *parent_ptr = static_cast<MainWindow*>(this->parent());
     parent_ptr->startTimer(0,valTC);
+    this->hide();
 }
 
 void Custom::on_startDuel_clicked()
 {
-    this->hide();
     MainWindow *parent_ptr = static_cast<MainWindow*>(this->parent());
     parent_ptr->startTimer(1,valDuel);
+    this->hide();
 }
