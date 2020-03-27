@@ -19,3 +19,12 @@ Configurer table de mixage son :
 Exécuter sur la raspberry :
 
     ./ArcheryTimer -style motif
+
+
+Commandes :
+
+    ALT+F4 = Quitter
+
+  Pendant le Timer :
+    ENTER = Pause
+    ESCAPE = Retour au menu principal
