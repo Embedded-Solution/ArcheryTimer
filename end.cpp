@@ -15,15 +15,12 @@ End::~End()
 
 void End::on_homePB_clicked()
 {
-    this->hide();
     parentWidget()->parentWidget()->showFullScreen();
+    this->hide();
 }
 
 void End::on_nextPB_clicked()
 {
     emit resetTimer();
     this->hide();
-
-
-
 }

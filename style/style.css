@@ -31,7 +31,7 @@ font-size: @labelFontSize;
         /*background-color:@backgroundColor;*/
 }
 
-.button, QPushButton {
+.button,.homeButton, QPushButton {
         background-color: @frameColor;
         color:@buttonTextColor;
         font-size: @labelFontSize;

@@ -82,7 +82,6 @@ void MainWindow::on_duelButton_clicked()
 
 void MainWindow::startTimer(bool mode,QVector<int> params)
 {
-//    this->hide();
     m_timer->timerTC(mode,params);
 }
 
