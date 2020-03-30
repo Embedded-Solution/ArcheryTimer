@@ -105,7 +105,7 @@ void Timer::on_timerTC()
             m_phase--;
         break;
 
-    case 2: //orange + red phase
+    case 2: //green + red phase
         total=m_params[1]+m_params[2];
         //change to green color
         if (m_params[0]==-1)
@@ -119,9 +119,9 @@ void Timer::on_timerTC()
         //change to red color
         if (m_params[1]==0)
         {
-            this->setStyleSheet(".timerWindow{ background-color : #EB0000;}");
-            timerLabelTextShadowEffect->setColor(QColor("#C50000"));
+            timerLabelTextShadowEffect->setColor(QColor("#C56800"));
             ui->timerLabel->setGraphicsEffect(timerLabelTextShadowEffect );
+            this->setStyleSheet(".timerWindow{ background-color : #EB7D00;}");
         }
 
         //print timer value
