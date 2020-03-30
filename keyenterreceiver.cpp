@@ -1,3 +1,13 @@
+/****************************************
+ *                                      *
+ * Author : Erwan BARBIER               *
+ * Project : ArcheryTimer               *
+ * Date :26/03/2020                     *
+ *                                      *
+ * www.maomaker.wordpress.com           *
+ *                                      *
+ * **************************************/
+
 #include "keyenterreceiver.h"
 
 bool keyEnterReceiver::eventFilter(QObject* obj, QEvent* event)

@@ -1,3 +1,13 @@
+#/****************************************
+# *                                      *
+# * Author : Erwan BARBIER               *
+# * Project : ArcheryTimer               *
+# * Date :26/03/2020                     *
+# *                                      *
+# * www.maomaker.wordpress.com           *
+# *                                      *
+# * **************************************/
+
 QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets

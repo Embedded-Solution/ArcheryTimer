@@ -1,3 +1,13 @@
+/****************************************
+ *                                      *
+ * Author : Erwan BARBIER               *
+ * Project : ArcheryTimer               *
+ * Date :26/03/2020                     *
+ *                                      *
+ * www.maomaker.wordpress.com           *
+ *                                      *
+ * **************************************/
+
 #ifndef END_H
 #define END_H
 

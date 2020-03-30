@@ -1,3 +1,13 @@
+/****************************************
+ *                                      *
+ * Author : Erwan BARBIER               *
+ * Project : ArcheryTimer               *
+ * Date :26/03/2020                     *
+ *                                      *
+ * www.maomaker.wordpress.com           *
+ *                                      *
+ * **************************************/
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
